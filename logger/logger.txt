@@ -1,0 +1,35 @@
+Epoch [1/2000], Step [5/768000]:
+Mel Loss: 30.0971, Mel PostNet Loss: 30.5072, Duration Loss: 5.1757;
+Current Learning Rate is 0.000001.
+Time Used: 58.773s, Estimated Time Remaining: 9090731.839s.
+
+Epoch [1/2000], Step [10/768000]:
+Mel Loss: 28.6037, Mel PostNet Loss: 28.9705, Duration Loss: 5.2268;
+Current Learning Rate is 0.000002.
+Time Used: 106.487s, Estimated Time Remaining: 8323781.358s.
+
+Epoch [1/2000], Step [15/768000]:
+Mel Loss: 22.5549, Mel PostNet Loss: 22.8256, Duration Loss: 4.9023;
+Current Learning Rate is 0.000004.
+Time Used: 151.637s, Estimated Time Remaining: 7789626.504s.
+
+Epoch [1/2000], Step [20/768000]:
+Mel Loss: 21.3878, Mel PostNet Loss: 21.5885, Duration Loss: 4.4314;
+Current Learning Rate is 0.000005.
+Time Used: 189.640s, Estimated Time Remaining: 7389127.174s.
+
+Epoch [1/2000], Step [25/768000]:
+Mel Loss: 21.0071, Mel PostNet Loss: 21.1405, Duration Loss: 4.1882;
+Current Learning Rate is 0.000006.
+Time Used: 221.190s, Estimated Time Remaining: 5584732.293s.
+
+Epoch [1/2000], Step [30/768000]:
+Mel Loss: 17.1037, Mel PostNet Loss: 17.1149, Duration Loss: 3.9027;
+Current Learning Rate is 0.000007.
+Time Used: 241.716s, Estimated Time Remaining: 4483439.710s.
+
+Epoch [1/2000], Step [35/768000]:
+Mel Loss: 20.1575, Mel PostNet Loss: 20.1630, Duration Loss: 3.6270;
+Current Learning Rate is 0.000009.
+Time Used: 279.119s, Estimated Time Remaining: 4506425.352s.
+
