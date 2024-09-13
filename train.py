@@ -20,11 +20,10 @@ import utils
 
 def main(args):
     # Get device
-    device = torch.device('cuda'if torch.cuda.is_available()else 'cpu')
 
     # Define model
     print("Use FastSpeech")
-    model = nn.DataParallel(FastSpeech()).to(device)
+    model = FastSpeech()
     print("Model Has Been Defined")
     num_param = utils.get_param_num(model)
     print('Number of TTS Parameters:', num_param)
@@ -40,7 +39,7 @@ def main(args):
                                      hp.decoder_dim,
                                      hp.n_warm_up_step,
                                      args.restore_step)
-    fastspeech_loss = DNNLoss().to(device)
+    fastspeech_loss = DNNLoss()
     print("Defined Optimizer and Loss Function.")
 
     # Load checkpoint if exists
@@ -91,11 +90,11 @@ def main(args):
                 scheduled_optim.zero_grad()
 
                 # Get Data
-                character = db["text"].long().to(device)
-                mel_target = db["mel_target"].float().to(device)
-                duration = db["duration"].int().to(device)
-                mel_pos = db["mel_pos"].long().to(device)
-                src_pos = db["src_pos"].long().to(device)
+                character = db["text"].long()
+                mel_target = db["mel_target"].float()
+                duration = db["duration"].int()
+                mel_pos = db["mel_pos"].long()
+                src_pos = db["src_pos"].long()
                 max_mel_len = db["mel_max_len"]
 
                 # Forward
